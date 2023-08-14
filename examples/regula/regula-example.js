@@ -8,14 +8,13 @@ async function initProcess() {
 		environment: FadSdk.getFadEnvironments().UAT
 	};
 
+	const fadSdk = new FadSdk(TOKEN, options);
 	try {
-		const FAD_SDK = new FadSdk(TOKEN, options);
 		const idData = true; // true - ocr, false - without this data
 		const idPhoto = true; // true - get imaghen face of id, false - without this data
 
 		// Returns the image of identification (id.image.data) and relevant information (sharpness, glare), documentInstance, idData and idPhoto
-		const regulaResponse = await FAD_SDK.startRegula(REGULA_CREDENTIALS, idData, idPhoto, FadSdk.Constants.Regula.CaptureType.DOCUMENT_READER, CONFIGURATION);
-		FAD_SDK.end();
+		const regulaResponse = await fadSdk.startRegula(REGULA_CREDENTIALS, idData, idPhoto, FadSdk.Constants.Regula.CaptureType.DOCUMENT_READER, CONFIGURATION);
 
 		// PROCESS_COMPLETED
 		console.log('Process completed');
@@ -55,6 +54,8 @@ async function initProcess() {
 			// restart component
 			alert(JSON.stringify(ex));
 		}
+	} finally {
+		fadSdk.end();
 	}
 }
 
