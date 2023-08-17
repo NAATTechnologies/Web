@@ -59,6 +59,11 @@ El SDK incluye los siguientes módulos:
 - Captura y procesamiento de documentos
 - Extracción de OCR
 - Clasificación de documentos
+### [Acuant](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Acuant#websdk-acuantbeta)
+
+- Captura y procesamiento de documentos
+- Extracción de OCR
+- Clasificación de documentos
 
 ---
 
@@ -164,6 +169,8 @@ finally {
 
 [`FadSDK.startRegula(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Regula#websdk-regula)
 
+#### Acuant
+[`FadSDK.startAcuantBeta(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Acuant#websdk-acuantbeta)
 
 
 ### 5. Ejemplo de código completo
