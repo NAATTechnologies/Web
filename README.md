@@ -172,6 +172,9 @@ finally {
 #### Acuant
 [`FadSDK.startAcuantBeta(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Acuant#websdk-acuantbeta)
 
+#### Signature
+[`FadSDK.startSignature(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Signature#websdk-signature)
+
 
 ### 5. Ejemplo de código completo
 
