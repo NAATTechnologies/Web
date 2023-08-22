@@ -175,6 +175,8 @@ finally {
 #### Signature
 [`FadSDK.startSignature(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Signature#websdk-signature)
 
+#### Facetec
+[`FadSDK.startFacetec(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Facetec#websdk-facetec)
 
 ### 5. Ejemplo de código completo
 
