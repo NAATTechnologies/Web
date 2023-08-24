@@ -170,7 +170,7 @@ finally {
 [`FadSDK.startRegula(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Regula#websdk-regula)
 
 #### Acuant
-[`FadSDK.startAcuantBeta(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Acuant#websdk-acuantbeta)
+[`FadSDK.startAcuant(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Acuant#websdk-acuant)
 
 #### Signature
 [`FadSDK.startSignature(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Signature#websdk-signature)
