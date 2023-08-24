@@ -9,17 +9,15 @@ import FadSdk from '../../web-sdk/fad-sdk.min.js';
 	 environment: FadSdk.getFadEnvironments().UAT,
 	};
  
+	const FAD_SDK = new FadSdk(TOKEN, options);
 	try {
-	 const FAD_SDK = new FadSdk(TOKEN, options);
 	 const idData = true; // true - ocr, false - without this data
 	 const idPhoto = true; // true - get imaghen face of id, false - without this data
  
 	 // Returns the image of identification (id.image.data) and relevant information (sharpness, glare), documentInstance, idData and idPhoto
 	 const acuantResponse = await FAD_SDK.startAcuant(ACUANT_CREDENTIALS, idData, idPhoto, CONFIGURATION);
-	 FAD_SDK.end();
  
 	 // PROCESS_COMPLETED
-	 console.log('Process completed');
 	 console.log(acuantResponse);
 	 // use the results as you see fit
 	 // show result example
@@ -59,6 +57,8 @@ import FadSdk from '../../web-sdk/fad-sdk.min.js';
 		// restart component
 		alert(JSON.stringify(ex));
 	 }
+	} finally {
+		FAD_SDK.end();
 	}
  }
  
