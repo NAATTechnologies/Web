@@ -64,6 +64,8 @@ El SDK incluye los siguientes módulos:
 - Captura y procesamiento de documentos
 - Extracción de OCR
 - Clasificación de documentos
+- Alertas de pruebas ( fecha de expiración del documento, fecha de nacimiento de la persona, clasificación del documento, el número del documento, el nombre en la identificación, etc ) realizadas en los documentos 
+
 
 ---
 
