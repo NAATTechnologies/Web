@@ -66,8 +66,11 @@ El SDK incluye los siguientes módulos:
 - Clasificación de documentos
 - Alertas de pruebas ( fecha de expiración del documento, fecha de nacimiento de la persona, clasificación del documento, el número del documento, el nombre en la identificación, etc ) realizadas en los documentos 
 
+### [Facetec](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Facetec)
 
----
+- Prueba de vida
+- Detección suplantanción de identidad (fotografías, videos y máscaras)
+
 
 ## Configuración
 
