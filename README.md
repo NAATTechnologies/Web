@@ -22,7 +22,7 @@ See [Migration Details](docs/MigrationDetails.md) for more information. -->
 
 ## Introducción
 
-Este documento proporciona información sobre FadSDK, el SDK web que permite a los desarrolladores integrar funcionalidad de difentes módulos (link al apartado e módulos) en sus aplicaciones web móviles.
+Este documento proporciona información sobre FadSDK, el SDK web que permite a los desarrolladores integrar funcionalidad de difentes módulos en sus aplicaciones web móviles.
 
 ---
 
