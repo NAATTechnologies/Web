@@ -3,6 +3,7 @@ export const TOKEN = 'TOKEN';
 
 // optional, the app has default legends and colors
 export const CONFIGURATION = {
+	allowClose: true,
 	views: {
 		instructions: true,
 		preview: true,
@@ -68,6 +69,9 @@ export const CONFIGURATION = {
 				buttonFinish: 'Terminar',
 				recording: 'Grabando',
 				focusFace: 'Enfoca tu rostro dentro de la guía',
+        signNowHere: 'Firma aquí ahora',
+        faceDetected: 'Rostro detectado',
+        faceUndetected: 'Rostro no detectado',
 				common: {
 					loader: {
 						initializing: 'iniciando',
