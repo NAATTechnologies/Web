@@ -22,7 +22,7 @@ See [Migration Details](docs/MigrationDetails.md) for more information. -->
 
 ## Introducción
 
-Este documento proporciona información sobre FadSDK, el SDK web que permite a los desarrolladores integrar funcionalidad de difentes módulos (link al apartado e módulos) en sus aplicaciones web móviles.
+Este documento proporciona información sobre FAD SDK, el SDK web que permite a los desarrolladores integrar funcionalidad de diferentes [módulos](#modules) en sus aplicaciones web móviles.
 
 ---
 
@@ -49,7 +49,7 @@ Los requerimientos de hardware y de dispositivo/navegador cambian en relación a
 
 
 ---
-
+<a name="modules"></a>
 ## Módulos
 
 El SDK incluye los siguientes módulos:
