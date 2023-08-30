@@ -1,4 +1,4 @@
-import FadSdk from '../../web-sdk/fad-sdk.min.js';
+import FadSDK from '../../web-sdk/fad-sdk.min.js';
  import {ACUANT_CREDENTIALS, CONFIGURATION, TOKEN} from './acuant-constants.js';
 
  
@@ -6,10 +6,10 @@ import FadSdk from '../../web-sdk/fad-sdk.min.js';
  
  async function initProcess() {
 	const options = {
-	 environment: FadSdk.getFadEnvironments().UAT,
+	 environment: FadSDK.getFadEnvironments().UAT,
 	};
  
-	const FAD_SDK = new FadSdk(TOKEN, options);
+	const FAD_SDK = new FadSDK(TOKEN, options);
 	try {
 	 const idData = true; // true - ocr, false - without this data
 	 const idPhoto = true; // true - get imaghen face of id, false - without this data
@@ -29,30 +29,30 @@ import FadSdk from '../../web-sdk/fad-sdk.min.js';
 	 const ocr = document.getElementById('ocr');
  
 	 containerResult.style.display = 'flex';
-	 imageIdFront.src = acuantResponse.id.front.image.data;
+	 imageIdFront.src = acuantResponse.data.id.front.image.data;
  
-	 if(acuantResponse.id?.back?.image?.data) {
-		 imageIdBack.src = acuantResponse.id.back.image.data;
+	 if(acuantResponse.data.id?.back?.image?.data) {
+		 imageIdBack.src = acuantResponse.data.id.back.image.data;
 	 } else {
 		 imageIdBack.style.display = 'none';
 	 }
-	 imageFace.src = acuantResponse.idPhoto;
-	 ocr.innerHTML = JSON.stringify(acuantResponse.idData.ocr);
+	 imageFace.src = acuantResponse.data.idPhoto;
+	 ocr.innerHTML = JSON.stringify(acuantResponse.data.idData.ocr);
 	} catch (ex) {
 	 // PRROCESS_ERROR
 	 console.log(ex);
-	 if (ex.code === FadSdk.Errors.Acuant.UNSUPPORTED_CAMERA) {
+	 if (ex.code === FadSDK.Errors.Acuant.UNSUPPORTED_CAMERA) {
 		// do something
 		alert('Cámara no soportada, intenta en otro dispositivo');
-	 } else if (ex.code === FadSdk.Errors.Acuant.FAIL_INITIALIZATION) {
+	 } else if (ex.code === FadSDK.Errors.Acuant.FAIL_INITIALIZATION) {
 		// restart component
-	 } else if (ex.code === FadSdk.Errors.Acuant.FAIL_GET_OCR) {
+	 } else if (ex.code === FadSDK.Errors.Acuant.FAIL_GET_OCR) {
 		// restart component
-	 } else if (ex.code === FadSdk.Errors.Acuant.FAIL_GET_FACE_IMAGE) {
+	 } else if (ex.code === FadSDK.Errors.Acuant.FAIL_GET_FACE_IMAGE) {
 		// restart component
-	 } else if (ex.code === FadSdk.Errors.Acuant.FACE_IMAGE_URL_NOT_FOUND) {
+	 } else if (ex.code === FadSDK.Errors.Acuant.FACE_IMAGE_URL_NOT_FOUND) {
 		// restart component
-	 } else if (ex.code === FadSdk.Errors.Acuant.FACE_IMAGE_NOT_FOUND) {
+	 } else if (ex.code === FadSDK.Errors.Acuant.FACE_IMAGE_NOT_FOUND) {
 	 } else {
 		// restart component
 		alert(JSON.stringify(ex));

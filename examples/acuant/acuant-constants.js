@@ -65,28 +65,46 @@ export const CONFIGURATION = {
 		moduleCustomization: {
 			legends: {
 				scan: {
-					none: 'ENFOCA TU ID SOBRE LA GUÍA',
-					smallDocument: 'ACERCATE MÁS',
-					bigDocument: 'DEMASIADO CERCA',
-					goodDocument: '',
-					capturing: 'CAPTURANDO ',
-					tapToCapture: 'TOCA LA PANTALLA PARA CAPTURAR',
+					front: {
+						none: 'ENFOCA EL FRENTE DE TU ID SOBRE LA GUÍA',
+						smallDocument: 'ACERCATE MÁS',
+						bigDocument: 'DEMASIADO CERCA',
+						goodDocument: null,
+						capturing: 'CAPTURANDO',
+						tapToCapture: 'TOCA LA PANTALLA PARA CAPTURAR',
+						title: 'Frente',
+					},
+					back: {
+						none: 'ENFOCA EL REVERSO DE TU ID SOBRE LA GUÍA',
+						smallDocument: 'ACERCATE MÁS',
+						bigDocument: 'DEMASIADO CERCA',
+						goodDocument: null,
+						capturing: 'CAPTURANDO',
+						tapToCapture: 'TOCA LA PANTALLA PARA CAPTURAR',
+						title: 'Reverso',
+					},
 				},
 				manualCapture: {
 					tooltip: 'Captura nuevamente',
 					mobile: {
-						instruction: 'Captura el frente de tu identificación',
-						buttonNext: 'Continuar',
+						front: {
+							instruction: 'Captura el frente de tu identificación',
+							buttonNext: 'Continuar',
+						},
+						back: {
+							instruction: 'Captura el reverso de tu identificación',
+							buttonNext: 'Continuar',
+						},
 					},
 					desktop: {
-						instruction: 'Sube el frente de tu identificación',
-						title: 'Frente',
-					},
-				},
-				common: {
-					loader: {
-						initializing: 'iniciando',
-						processing: 'procesando',
+						front: {
+							instruction: 'Sube el frente de tu identificación',
+							title: 'Frente',
+						},
+						back: {
+							title: 'Reverso',
+							instruction: 'Sube el reverso de tu identificación',
+						},
 					},
 				},
 			},
