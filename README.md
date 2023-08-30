@@ -71,7 +71,22 @@ El SDK incluye los siguientes módulos:
 - Prueba de vida
 - Detección suplantanción de identidad (fotografías, videos y máscaras)
 
+### [Firma]()
+- Pad de firma
+- Detección de rostro
+- Grabación de videos (rostro y firma)
+- Biometría de la firma
 
+### [Videoacuerdo]()
+- Detección de rostro
+- Grabación de video
+- Leyenda en modo karaoke
+
+### [Videograbación]()
+- Detección de rostro
+- Detección de identificaciones (ID MEX, Pasaporte MEX)
+- Grabación de video
+- Leyenda en modo karaoke
 ## Configuración
 
 1. Agregue el archivo `fad-sdk.min.js` en el proyecto que se utilizará
