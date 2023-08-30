@@ -12,6 +12,7 @@ export const CONFIGURATION = {
 	},
 	cameraSnapshot: {
 		changeCameraButton: true,
+    closeButton: false
 	},
 	documentReader: {
 		changeCameraButton: true,
