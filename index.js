@@ -1,3 +1,3 @@
-import FadSdk from './web-sdk/fad-sdk.min.js';
+import FadSDK from './web-sdk/fad-sdk.min.js';
 
-document.getElementById('fad-sdk-version').innerHTML = `v${FadSdk.version}`;
+document.getElementById('fad-sdk-version').innerHTML = `v${FadSDK.version}`;
