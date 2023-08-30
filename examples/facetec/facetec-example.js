@@ -1,17 +1,13 @@
-import FadSdk from '../../web-sdk/fad-sdk.min.js';
+import FadSDK from '../../web-sdk/fad-sdk.min.js';
 import { FACETEC_CREDENTIALS, CONFIGURATION, TOKEN } from './facetec-constants.js';
 
 async function initProcess() {
  const options = {
-  environment: FadSdk.getFadEnvironments().UAT,
+  environment: FadSDK.getFadEnvironments().UAT,
  };
 
- const fadSdk = new FadSdk(TOKEN, options);
+ const fadSdk = new FadSDK(TOKEN, options);
  try {
-  const idData = true; // true - ocr, false - without this data
-  const idPhoto = true; // true - get imaghen face of id, false - without this data
-
-  // Returns the image of identification (id.image.data) and relevant information (sharpness, glare), documentInstance, idData and idPhoto
   const facetecResponse = await fadSdk.startFacetec(FACETEC_CREDENTIALS, CONFIGURATION);
 
   // PROCESS_COMPLETED
@@ -20,9 +16,9 @@ async function initProcess() {
   // use the results as you see fit
   // show result example
 
-  const img = facetecResponse.auditTrail[0];
-  const imgLowQuality = facetecResponse.lowQualityAuditTrail[0];
-  const faceScan = facetecResponse.faceScan;
+  const img = facetecResponse.data.auditTrail[0];
+  const imgLowQuality = facetecResponse.data.lowQualityAuditTrail[0];
+  const faceScan = facetecResponse.data.faceScan;
 
   // use the results as you see fit
   // show result example
@@ -38,10 +34,10 @@ async function initProcess() {
  } catch (ex) {
   // PRROCESS_ERROR
   console.log(ex);
-  if (ex.code === FadSdk.Errors.Facetec.Session.CAMERA_NOT_RUNNING) {
+  if (ex.code === FadSDK.Errors.Facetec.Session.CAMERA_NOT_RUNNING) {
    // do something
    alert('Cámara no soportada, intenta en otro dispositivo');
-  } else if (ex.code === FadSdk.Errors.Facetec.Session.INITIALIZATION_NOT_COMPLETED) {
+  } else if (ex.code === FadSDK.Errors.Facetec.Session.INITIALIZATION_NOT_COMPLETED) {
    // restart component
   } else {
    // restart component

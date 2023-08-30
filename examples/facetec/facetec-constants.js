@@ -1,4 +1,4 @@
-// regula credentials
+// facetec credentials
 export const FACETEC_CREDENTIALS = {
 	deviceKeyIdentifier: 'XXXXXXXXXXXXXXXXXX',
 	baseURL: '',
@@ -69,8 +69,6 @@ export const CONFIGURATION = {
  
 	 moduleCustomization: {
 		legends: {
-		 initializing: 'Iniciando',
-		 processing: 'procesando',
 		 facetec: {
 			accessibilityCancelButton: 'Cancelar',
 			feedbackCenterFace: 'Centra tu rostro',
@@ -117,6 +115,12 @@ export const CONFIGURATION = {
 			enterFullscreenMessage: 'Antes de comenzar da clic en el botón de abajo para abrir en pantalla completa',
 			enterFullscreenAction: 'Continuar',
 		 },
+		 common: {
+			  loader: {
+			    initializing: 'iniciando',
+			    processing: 'procesando',
+			  }
+			}
 		},
 		legendsInstructions: {
 		 title: 'Prueba de vida',
