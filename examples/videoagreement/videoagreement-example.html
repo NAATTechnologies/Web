@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../index.css" />
+	<title>FAD-IFRAME-VIDEOAGREEMENT</title>
+</head>
+<body>
+	<h1>Videoagreement</h1>
+  <div id="container-result">
+		<div>
+			<p><strong> Video result: </strong></p>
+			<video id="video-id" controls></video>
+			<a id="donwload-ancord" download="video-face.mp4">Descargar videoagreement</a>
+		</div>
+	</div>
+
+	<a href="../../index.html"> Regresar </a>
+	<script src="videoagreement-example.js" type="module"></script>
+</body>
+</html>
+
+
+<style>
+
+	#container-result {
+		display: none;
+		flex-direction: column;
+		font-family: system-ui;
+		margin: 5%;
+		max-width: 100%;
+		word-break: break-all;
+	}
+	
+	a{
+		display: block;
+		width: fit-content;
+	}
+	#signature-img, #signature-video{
+		width: 300px;
+	}
+	#face-video {
+		width: 200px;
+	}
+	</style>
