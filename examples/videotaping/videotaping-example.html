@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../index.css" />
+	<title>FAD-IFRAME-VIDEOTAPING</title>
+</head>
+<body>
+	<h1>Videotaping</h1>
+  <div id="container-result">
+    <div>
+      <p><strong> Video result: </strong></p>
+      <video id="video-id" controls></video>
+      <a id="donwload-ancord" download="video-face.mp4" name="video-face.mp4">Descargar video-face</a>
+    </div>
+    <div>
+      <p><strong>Start second:</strong><span id="startSecond"></span></p>
+    </div>
+  </div>
+
+	<a href="../../index.html"> Regresar </a>
+	<script src="videotaping-example.js" type="module"></script>
+</body>
+</html>
+
+
+<style>
+
+	#container-result {
+		display: none;
+		flex-direction: column;
+		font-family: system-ui;
+		margin: 5%;
+		max-width: 100%;
+		word-break: break-all;
+	}
+	
+	a{
+		display: block;
+		width: fit-content;
+	}
+	</style>
