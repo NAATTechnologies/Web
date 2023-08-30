@@ -1,13 +1,11 @@
-
-
-import FadSdk from '../../web-sdk/fad-sdk.min.js';
+import FadSDK from '../../web-sdk/fad-sdk.min.js';
 
 async function initProcess() {
 	const options = {
-		environment: FadSdk.getFadEnvironments().UAT
+		environment: FadSDK.getFadEnvironments().UAT
 	};
 
-	const fadSdk = new FadSdk(null, options);
+	const fadSdk = new FadSDK(null, options);
 	try {
 			const ticket = 'ticket';
 			const result = await fadSdk.startFadWeb4(ticket);
