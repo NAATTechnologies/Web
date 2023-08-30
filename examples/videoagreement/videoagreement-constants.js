@@ -1,5 +1,4 @@
-export const TOKEN =
- 'TOKEN';
+export const TOKEN = 'TOKEN';
 
 // optional, the app has default legends and colors
 export const CONFIGURATION = {
