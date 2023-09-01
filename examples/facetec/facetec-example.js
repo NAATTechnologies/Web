@@ -25,12 +25,10 @@ async function initProcess() {
   const containerResult = document.getElementById('container-result');
   const imageId = document.getElementById('image-id');
   const imageFace = document.getElementById('image-face');
-  const faceScanElement = document.getElementById('faceScan');
 
   containerResult.style.display = 'flex';
   imageId.src = 'data:image/png;base64, ' + img;
   imageFace.src = 'data:image/png;base64, ' + imgLowQuality;
-  faceScanElement.innerHTML = faceScan;
  } catch (ex) {
   // PRROCESS_ERROR
   console.log(ex);
