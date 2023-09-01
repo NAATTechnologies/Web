@@ -93,10 +93,10 @@ El SDK incluye los siguientes módulos:
 
 > **Nota**: estos archivos deben estar accesibles en el directorio de recursos públicos de la aplicación alojada):
 
-Dentro del archivo JS donde se quiere utilizar el SDK debes importar el objeto `FadSdk`.
+Dentro del archivo JS donde se quiere utilizar el SDK debes importar el objeto `FadSDK`.
 
 ```js
-import FadSdk from 'fad-sdk.min.js';
+import FadSDK from 'fad-sdk.min.js';
 ```
 
 > :warning: Nota importante para **Vanila JS**
@@ -119,17 +119,17 @@ import FadSdk from 'fad-sdk.min.js';
 
 ## Inicializar el SDK
 
-1. Una vez se ha importado `FadSdk` en el script deseado, se debe crear una instancia de la clase FadSdk.
+1. Una vez se ha importado `FadSDK` en el script deseado, se debe crear una instancia de la clase FadSDK.
 
 ```js
-const FAD_SDK = new FadSdk(token, options);
+const FAD_SDK = new FadSDK(token, options);
 ```
 
 > :information_source: Para más información consulta [Uso](https://github.com/NAATTechnologies/Web/wiki/Uso)
 
 ## Iniciar proceso
 
-### 1. Usar instancia de `FadSdk` para iniciar el proceso deseado a través de un método.
+### 1. Usar instancia de `FadSDK` para iniciar el proceso deseado a través de un método.
 
 Todos los procesos serán promesas por lo que para obtener el resultado del proceso es necesario esperar a que la promesa sea resuelta o, en su defecto, si se generó un error, que la promesa sea rechazada.
 
@@ -201,13 +201,13 @@ finally {
 ### 5. Ejemplo de código completo
 
 ```js
-import FadSdk from './web-sdk/fad-sdk.min.js';
+import FadSDK from './web-sdk/fad-sdk.min.js';
 
 .
 .
 .
 
-const FAD_SDK = new FadSdk(token, options);
+const FAD_SDK = new FadSDK(token, options);
 try {
  const response = await FAD_SDK.startRegula(....);
  // use the result as you fit
