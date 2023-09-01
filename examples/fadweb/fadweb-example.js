@@ -5,17 +5,17 @@ async function initProcess() {
 		environment: FadSDK.getFadEnvironments().UAT
 	};
 
-	const fadSdk = new FadSDK(null, options);
+	const FAD_SDK = new FadSDK(null, options);
 	try {
 			const ticket = 'ticket';
-			const result = await fadSdk.startFadWeb4(ticket);
+			const result = await FAD_SDK.startFadWeb4(ticket);
 			console.log(result);
 	} catch (ex) {
 		// PRROCESS_ERROR
 		console.log('Unexpected error: ', ex);
 		
 	} finally {
-		fadSdk.end();
+		FAD_SDK.end();
 	}
 }
 

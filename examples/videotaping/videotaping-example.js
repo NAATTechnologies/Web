@@ -6,7 +6,7 @@ async function initProcess() {
   environment: FadSDK.getFadEnvironments().UAT,
  };
 
- const fadSdk = new FadSDK(TOKEN, options);
+ const FAD_SDK = new FadSDK(TOKEN, options);
  try {
   const LEGEND =
    'Yo Nombre del firmante, con fecha de nacimiento 20 de Junio, con credencial de elector número: 1234134134 declaro que soy Soltero, con ingresos mensuales de $15,667.21, cuento con Casa o depto propio actualmente SI cuento con tarjetas de crédito y reconozco que la información que he proporcionado es verídica';
@@ -14,7 +14,7 @@ async function initProcess() {
    { name: FadSDK.Constants.Videotaping.IdsAllowed.ID_MEX_FRONT, title: 'Frente' },
    { name: FadSDK.Constants.Videotaping.IdsAllowed.ID_MEX_BACK, title: 'Reverso' },
   ];
-  const videotapingResponse = await fadSdk.startVideotaping(LEGEND, IDENTIFICATIONS, CONFIGURATION);
+  const videotapingResponse = await FAD_SDK.startVideotaping(LEGEND, IDENTIFICATIONS, CONFIGURATION);
   if (videotapingResponse.event === FadSDK.Constants.EventModule.MODULE_CLOSED) {
    alert('Module closed by the user');
    return;
@@ -49,7 +49,7 @@ async function initProcess() {
    alert(JSON.stringify(ex));
   }
  } finally {
-  fadSdk.end();
+  FAD_SDK.end();
  }
 }
 

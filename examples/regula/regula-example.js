@@ -8,13 +8,13 @@ async function initProcess() {
 		environment: FadSDK.getFadEnvironments().UAT
 	};
 
-	const fadSdk = new FadSDK(TOKEN, options);
+	const FAD_SDK = new FadSDK(TOKEN, options);
 	try {
 		const idData = true; // true - ocr, false - without this data
 		const idPhoto = true; // true - get imaghen face of id, false - without this data
 
 		// Returns the image of identification (id.image.data) and relevant information (sharpness, glare), documentInstance, idData and idPhoto
-		const regulaResponse = await fadSdk.startRegula(REGULA_CREDENTIALS, idData, idPhoto, FadSDK.Constants.Regula.CaptureType.CAMERA_SNAPSHOT, CONFIGURATION);
+		const regulaResponse = await FAD_SDK.startRegula(REGULA_CREDENTIALS, idData, idPhoto, FadSDK.Constants.Regula.CaptureType.CAMERA_SNAPSHOT, CONFIGURATION);
 
 		if(regulaResponse.event  === FadSDK.Constants.EventModule.MODULE_CLOSED){
 			alert('Module closed by the user');
@@ -59,7 +59,7 @@ async function initProcess() {
 			alert(JSON.stringify(ex));
 		}
 	} finally {
-		fadSdk.end();
+		FAD_SDK.end();
 	}
 }
 

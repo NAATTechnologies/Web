@@ -6,9 +6,9 @@ async function initProcess() {
   environment: FadSDK.getFadEnvironments().UAT,
  };
 
- const fadSdk = new FadSDK(TOKEN, options);
+ const FAD_SDK = new FadSDK(TOKEN, options);
  try {
-  const facetecResponse = await fadSdk.startFacetec(FACETEC_CREDENTIALS, CONFIGURATION);
+  const facetecResponse = await FAD_SDK.startFacetec(FACETEC_CREDENTIALS, CONFIGURATION);
 
   // PROCESS_COMPLETED
   console.log('Process completed');
@@ -44,7 +44,7 @@ async function initProcess() {
    alert(JSON.stringify(ex));
   }
  } finally {
-  fadSdk.end();
+  FAD_SDK.end();
  }
 }
 

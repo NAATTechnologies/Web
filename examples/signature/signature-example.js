@@ -8,9 +8,9 @@ async function initProcess() {
 		environment: FadSDK.getFadEnvironments().UAT
 	};
 
-	const fadSdk = new FadSDK(TOKEN, options);
+	const FAD_SDK = new FadSDK(TOKEN, options);
 	try {
-		const signatureResponse = await fadSdk.startSignature(CONFIGURATION);
+		const signatureResponse = await FAD_SDK.startSignature(CONFIGURATION);
 
 		if (signatureResponse.event === FadSDK.Constants.EventModule.MODULE_CLOSED) {
 			alert('Module closed by the user');
@@ -52,7 +52,7 @@ async function initProcess() {
 		}
 		console.log(ex);
 	} finally {
-		fadSdk.end();
+		FAD_SDK.end();
 	}
 }
 

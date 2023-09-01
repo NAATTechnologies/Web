@@ -6,10 +6,10 @@ async function initProcess() {
 		environment: FadSDK.getFadEnvironments().UAT,
 	};
 
-	const fadSdk = new FadSDK(TOKEN, options);
+	const FAD_SDK = new FadSDK(TOKEN, options);
 	try {
 		const LEGEND = 'Yo Nombre del firmante, con fecha de nacimiento 20 de Junio, con credencial de elector número: 1234134134 declaro que soy Soltero, con ingresos mensuales de $15,667.21, cuento con Casa o depto propio actualmente SI cuento con tarjetas de crédito y reconozco que la información que he proporcionado es verídica';
-		const videoagreementResponse = await fadSdk.startVideoagreement(LEGEND, CONFIGURATION);
+		const videoagreementResponse = await FAD_SDK.startVideoagreement(LEGEND, CONFIGURATION);
 
 		if (videoagreementResponse.event === FadSDK.Constants.EventModule.MODULE_CLOSED) {
 			alert('Module closed by the user');
@@ -43,7 +43,7 @@ async function initProcess() {
 		}
 		console.log(ex);
 	} finally {
-		fadSdk.end();
+		FAD_SDK.end();
 	}
 }
 
