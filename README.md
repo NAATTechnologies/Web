@@ -187,16 +187,16 @@ finally {
 
 #### Regula
 
-[`FadSDK.startRegula(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Regula#websdk-regula)
+[`FAD_SDK.startRegula(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Regula#websdk-regula)
 
 #### Acuant
-[`FadSDK.startAcuant(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Acuant#websdk-acuant)
+[`FAD_SDK.startAcuant(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Acuant#websdk-acuant)
 
 #### Signature
-[`FadSDK.startSignature(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Signature#websdk-signature)
+[`FAD_SDK.startSignature(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Signature#websdk-signature)
 
 #### Facetec
-[`FadSDK.startFacetec(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Facetec#websdk-facetec)
+[`FAD_SDK.startFacetec(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Facetec#websdk-facetec)
 
 ### 5. Ejemplo de código completo
 
