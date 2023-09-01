@@ -5,7 +5,7 @@ import { CONFIGURATION, TOKEN } from './signature-constants.js';
 
 async function initProcess() {
 	const options = {
-		environment: FadSdk.getFadEnvironments().UAT
+		environment: FadSDK.getFadEnvironments().UAT
 	};
 
 	const fadSdk = new FadSDK(TOKEN, options);

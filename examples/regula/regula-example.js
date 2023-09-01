@@ -5,7 +5,7 @@ import {REGULA_CREDENTIALS, CONFIGURATION, TOKEN} from './regula-constants.js';
 
 async function initProcess() {
 	const options = {
-		environment: FadSdk.getFadEnvironments().UAT
+		environment: FadSDK.getFadEnvironments().UAT
 	};
 
 	const fadSdk = new FadSDK(TOKEN, options);
