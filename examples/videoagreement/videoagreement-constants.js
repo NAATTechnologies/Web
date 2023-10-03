@@ -1,3 +1,5 @@
+import FadSDK from '../../web-sdk/fad-sdk.min.js';
+
 export const TOKEN = 'TOKEN';
 
 // optional, the app has default legends and colors
@@ -16,6 +18,9 @@ export const CONFIGURATION = {
   recording: { min: 5, max: 40 },
   faceUndetected: 5,
  },
+ legend: {
+  speed: FadSDK.Constants.Videoagreement.LettersSpeed.SLOW
+},
  customization: {
   fadCustomization: {
    colors: {
