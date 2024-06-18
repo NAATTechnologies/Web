@@ -1,6 +1,7 @@
 // regula credentials
 export const REGULA_CREDENTIALS = {
 	license: 'XXXXXXXXXXXXXXXXXXXX',
+	apiBasePath: 'XXXXXXXXXXXXXXXXXX'
 };
 export const TOKEN = 'TOKEN';
 
