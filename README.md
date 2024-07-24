@@ -87,13 +87,31 @@ El SDK incluye los siguientes módulos:
 - Detección de identificaciones (ID MEX, Pasaporte MEX)
 - Grabación de video
 - Leyenda en modo karaoke
-## Configuración
 
-1. Agregue el archivo `fad-sdk.min.js` en el proyecto que se utilizará
+### [Capture-id]()
+- Captura de documentos (INE, IFE, Pasaporte Mexicano)
+- Extraccion de OCR
+
+## Instalación  
+
+### Para npm instale la librería con el comando:
+```bash
+npm install @fad-producto/fad-sdk 
+```
+
+### Para el archivo JS
+Agregue el archivo `fad-sdk.min.js` en el proyecto que se utilizará
 
 > **Nota**: estos archivos deben estar accesibles en el directorio de recursos públicos de la aplicación alojada):
 
-Dentro del archivo JS donde se quiere utilizar el SDK debes importar el objeto `FadSDK`.
+## Configuración
+
+Importar el objeto `FadSDK` desde la libreria npm
+ 
+```js
+import FadSDK from '@fad-producto/fad-sdk';
+```
+Importar el objeto `FadSDK` desde el archivo JS
 
 ```js
 import FadSDK from 'fad-sdk.min.js';
@@ -198,6 +216,15 @@ finally {
 #### Facetec
 [`FAD_SDK.startFacetec(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Facetec#websdk-facetec)
 
+#### Videoagreement
+[`FAD_SDK.startVideoagreement(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Videoagreement#websdk-videoagreement)
+
+#### Videotaping
+[`FAD_SDK.startVideotaping(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Videotaping#websdk-videotaping)
+
+#### Capture id
+[`FAD_SDK.startCaptureId(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-CaptureId#websdk-captureId)
+
 ### 5. Ejemplo de código completo
 
 ```js
@@ -222,5 +249,5 @@ try {
 
 Cada módulo aquí descrito, cuenta con su [ejemplo](https://github.com/NAATTechnologies/Web/tree/master/examples) para un entendimiento más práctico.
 
-> **Nota**: estos ejemplos son únicamente desmostrativos, cada desarrollador debe determinar la mejor implementación y las mejores prácticas según sea el caso.
+> **Nota**: estos ejemplos son únicamente demostrativos, cada desarrollador debe determinar la mejor implementación y las mejores prácticas según sea el caso.
 

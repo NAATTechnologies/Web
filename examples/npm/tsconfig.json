@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "outDir": "./build/",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "jsx": "react",
+    "target": "ES5",
+    "allowJs": true,
+    "sourceMap": true
+  },
+  "include": [
+        "./**/*"
+  ],
+  "exclude": [
+      "webpack.config.js"
+  ]
+}

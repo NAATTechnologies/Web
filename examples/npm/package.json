@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "build": "webpack --mode development -w"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.11",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.9.0",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.5.3",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@fad-producto/fad-sdk": "^1.1.0-alpha.1"
+  }
+}

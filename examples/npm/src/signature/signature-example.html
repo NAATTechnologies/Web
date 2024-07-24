@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../index.css" />
+	<title>FAD-IFRAME-SIGNATURE</title>
+</head>
+<body>
+	<h1>Signature</h1>
+  <div id="container-result">
+		<div>
+			<p><strong>Face video result: </strong></p>
+			<video
+			 id="face-video"
+			 controls
+			></video>
+			<a
+			 id="donwload-face-video"
+			 download="video-face.mp4"
+			 >Descargar video-face</a
+			>
+		 </div>
+		 <div>
+			<p><strong>Signature image: </strong></p>
+			<img
+			 id="signature-img"
+			 alt="signature-image"
+			/>
+		 </div>
+		 <div>
+			<p><strong>Signature video result: </strong></p>
+			<video
+			 id="signature-video"
+			 controls
+			></video>
+			<a
+			 id="donwload-signature-video"
+			 download="video-signature.mp4"
+			 >Descargar video-signature</a
+			>
+		 </div>
+  </div>
+
+	<a href="../../index.html"> Regresar </a>
+	<script src="signature-example.js" type="module"></script>
+</body>
+</html>
+
+
+<style>
+
+	#container-result {
+		display: none;
+		flex-direction: column;
+		font-family: system-ui;
+		margin: 5%;
+		max-width: 100%;
+		word-break: break-all;
+	}
+	
+	a{
+		display: block;
+		width: fit-content;
+	}
+	#signature-img, #signature-video{
+		width: 300px;
+	}
+	#face-video {
+		width: 200px;
+	}
+	</style>
