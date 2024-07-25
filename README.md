@@ -71,24 +71,24 @@ El SDK incluye los siguientes módulos:
 - Prueba de vida
 - Detección suplantanción de identidad (fotografías, videos y máscaras)
 
-### [Firma]()
+### [Firma](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Signature)
 - Pad de firma
 - Detección de rostro
 - Grabación de videos (rostro y firma)
 - Biometría de la firma
 
-### [Videoacuerdo]()
+### [Videoacuerdo](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Videoagreement)
 - Detección de rostro
 - Grabación de video
 - Leyenda en modo karaoke
 
-### [Videograbación]()
+### [Videograbación](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Videotaping)
 - Detección de rostro
 - Detección de identificaciones (ID MEX, Pasaporte MEX)
 - Grabación de video
 - Leyenda en modo karaoke
 
-### [Capture-id]()
+### [Capture-id](https://github.com/NAATTechnologies/Web/wiki/WebSDK-CaptureId)
 - Captura de documentos (INE, IFE, Pasaporte Mexicano)
 - Extraccion de OCR
 
