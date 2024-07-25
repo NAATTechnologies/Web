@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-let modules = ['acuant', 'facetec', 'fadweb', 'regula', 'signature', 'videoagreement', 'videotaping', 'capture-id'];
+let modules = ['capture-id&A', 'liveness-3D', 'fadweb', 'capture-id&R', 'signature', 'videoagreement', 'videotaping', 'capture-id'];
 let multipleHtmlPlugins = modules.map(name => {
   return new HtmlWebpackPlugin({
     template: `./src/${name}/${name}-example.html`, // relative path to the HTML files
@@ -14,10 +14,10 @@ let multipleHtmlPlugins = modules.map(name => {
 module.exports = {
   entry: {
     'index': ['./src/index.ts', './src/index.css'],
-    'acuant/acuant-example': ['./src/acuant/acuant-example.ts'],
-    'facetec/facetec-example': ['./src/facetec/facetec-example.ts'],
+    'capture-id&A/capture-id&A-example': ['./src/capture-id&A/capture-id&A-example.ts'],
+    'liveness-3D/liveness-3D-example': ['./src/liveness-3D/liveness-3D-example.ts'],
     'fadweb/fadweb-example': ['./src/fadweb/fadweb-example.ts'],
-    'regula/regula-example': ['./src/regula/regula-example.ts'],
+    'capture-id&R/capture-id&R-example': ['./src/capture-id&R/capture-id&R-example.ts'],
     'signature/signature-example': ['./src/signature/signature-example.ts'],
     'videoagreement/videoagreement-example': ['./src/videoagreement/videoagreement-example.ts'],
     'videotaping/videotaping-example': ['./src/videotaping/videotaping-example.ts'],

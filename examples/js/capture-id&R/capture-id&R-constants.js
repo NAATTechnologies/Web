@@ -1,5 +1,5 @@
 // regula credentials
-export const REGULA_CREDENTIALS = {
+export const CREDENTIALS = {
 	license: 'XXXXXXXXXXXXXXXXXXXX',
 	apiBasePath: 'XXXXXXXXXXXXXXXXXX'
 };
@@ -63,7 +63,7 @@ export const CONFIGURATION = {
 			},
 			legendsInstructions: {
 				title: 'Identificación',
-				subtitle: 'Captura tu identificación',
+				subtitle: 'Captura tu identifcación',
 				buttonNext: 'Continuar',
 			},
 			legendsPreview: {

@@ -54,19 +54,19 @@ Los requerimientos de hardware y de dispositivo/navegador cambian en relación a
 
 El SDK incluye los siguientes módulos:
 
-### [Regula](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Regula)
+### [Capture-id&R](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Capture‐id&R)
 
 - Captura y procesamiento de documentos
 - Extracción de OCR
 - Clasificación de documentos
-### [Acuant](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Acuant#websdk-acuant)
+### [Capture-id&A](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Capture‐id&A)
 
 - Captura y procesamiento de documentos
 - Extracción de OCR
 - Clasificación de documentos
 - Alertas de pruebas ( fecha de expiración del documento, fecha de nacimiento de la persona, clasificación del documento, el número del documento, el nombre en la identificación, etc ) realizadas en los documentos 
 
-### [Facetec](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Facetec)
+### [Liveness-3D](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Liveness‐3D)
 
 - Prueba de vida
 - Detección suplantanción de identidad (fotografías, videos y máscaras)
@@ -203,18 +203,18 @@ finally {
 
 ### 4. Referencia de los métodos de FadSDK
 
-#### Regula
+#### Capture-id&R
 
-[`FAD_SDK.startRegula(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Regula#websdk-regula)
+[`FAD_SDK.startRegula(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Capture‐id&R)
 
-#### Acuant
-[`FAD_SDK.startAcuant(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Acuant#websdk-acuant)
+#### Capture-id&A
+[`FAD_SDK.startAcuant(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Capture‐id&A)
 
 #### Signature
 [`FAD_SDK.startSignature(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Signature#websdk-signature)
 
-#### Facetec
-[`FAD_SDK.startFacetec(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Facetec#websdk-facetec)
+#### Liveness-3D
+[`FAD_SDK.startFacetec(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Liveness‐3D)
 
 #### Videoagreement
 [`FAD_SDK.startVideoagreement(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Videoagreement#websdk-videoagreement)

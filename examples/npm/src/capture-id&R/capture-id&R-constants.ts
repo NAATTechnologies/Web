@@ -1,9 +1,9 @@
 // regula credentials
-export const REGULA_CREDENTIALS = {
+export const CREDENTIALS = {
 	license: 'XXXXXXXXXXXXXXXXXXXX',
 	apiBasePath: 'XXXXXXXXXXXXXXXXXX'
 };
-export const TOKEN = 'TOKEN';
+export const TOKEN = 'TOKEN';	
 
 // optional, the app has default legends and colors
 export const CONFIGURATION = {
@@ -63,7 +63,7 @@ export const CONFIGURATION = {
 			},
 			legendsInstructions: {
 				title: 'Identificación',
-				subtitle: 'Captura tu identifcación',
+				subtitle: 'Captura tu identificación',
 				buttonNext: 'Continuar',
 			},
 			legendsPreview: {

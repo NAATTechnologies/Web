@@ -1,11 +1,11 @@
 // acuant credentials
-export const ACUANT_CREDENTIALS = {
-	passiveUsername: "******",
-	passivePassword: "******",
-	passiveSubscriptionId: "******",
-	acasEndpoint: "******",
-	livenessEndpoint: "******",
-	assureidEndpoint: "******",
+export const CREDENTIALS = {
+	passiveUsername: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+	passivePassword: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+	passiveSubscriptionId: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+	acasEndpoint: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+	livenessEndpoint: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+	assureidEndpoint: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
   };
   
   export const TOKEN = "TOKEN";

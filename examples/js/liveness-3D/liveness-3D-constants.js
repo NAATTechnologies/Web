@@ -1,5 +1,5 @@
 // facetec credentials
-export const FACETEC_CREDENTIALS = {
+export const CREDENTIALS = {
 	deviceKeyIdentifier: 'XXXXXXXXXXXXXXXXXX',
 	baseURL: '',
 	publicFaceScanEncryptionKey:

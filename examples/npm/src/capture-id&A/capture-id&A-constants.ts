@@ -1,14 +1,15 @@
 // acuant credentials
-export const ACUANT_CREDENTIALS = {
+export const CREDENTIALS = {
 	passiveUsername: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
 	passivePassword: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
 	passiveSubscriptionId: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
 	acasEndpoint: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
 	livenessEndpoint: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
 	assureidEndpoint: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
-};
+  };
+  
+export const TOKEN = "TOKEN";
 
-export const TOKEN = 'TOKEN';
 // optional, the app has default legends and colors
 export const CONFIGURATION = {
 	views: {

@@ -2,6 +2,11 @@
   
   // optional, the app has default legends and colors
   export const CONFIGURATION = {
+	fadCustomization: {
+		colors: {
+			primary: "#A70635",
+		}
+	},
 	customization: {
 	  moduleCustomization: {
 		legends: {
@@ -25,6 +30,13 @@
 		  }
 		},
 		style: {
+			common: {
+				loader: {
+				  backgroundColor: "#000000",
+				  animationColor: "#FFFFFF",
+				  labelColor: "#FFFFFF"
+				}
+			},
 		  outerBackgroundColor: '#2b2b2b66',
 		  idDetectedOuterBackgroundColor: '#0a0a0ab3',
 		  detectionBorder: {
@@ -63,7 +75,6 @@
 	},
 	pathDependencies: {
 	//   imageDirectory: 'CUSTOM IMAGE URL',
-	//   jsDirectory: 'CUSTOM IMAGE URL',
 	//   images: {
 	// 	nativeCaptureInstruction: 'CUSTOM IMAGE URL'
 	//   }

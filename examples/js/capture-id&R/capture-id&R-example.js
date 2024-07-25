@@ -1,7 +1,7 @@
-import { TOKEN, REGULA_CREDENTIALS, CONFIGURATION } from "./regula-constants";
 
-// const FadSDK = require('FadSDK');
-import FadSDK from "@fad-producto/fad-sdk";
+
+import FadSDK from '../web-sdk/fad-sdk.min.js';
+import {CREDENTIALS, CONFIGURATION, TOKEN} from './capture-id&R-constants.js';
 
 async function initProcess() {
 	const options = {
@@ -12,37 +12,36 @@ async function initProcess() {
 	try {
 		const idData = true; // true - ocr, false - without this data
 		const idPhoto = true; // true - get imaghen face of id, false - without this data
-		console.log(TOKEN);
-		
-		// Returns the image of identification (id.image.data) and relevant information (sharpness, glare), documentInstance, idData and idPhoto
-		const regulaResponse = await FAD_SDK.startRegula(REGULA_CREDENTIALS, FadSDK.Constants.Regula.CaptureType.CAMERA_SNAPSHOT, idData, idPhoto, CONFIGURATION);
 
-		if(regulaResponse.event  === FadSDK.Constants.EventModule.MODULE_CLOSED){
+		// Returns the image of identification (id.image.data) and relevant information (sharpness, glare), documentInstance, idData and idPhoto
+		const moduleResponse = await FAD_SDK.startRegula(CREDENTIALS, idData, idPhoto, FadSDK.Constants.Regula.CaptureType.CAMERA_SNAPSHOT, CONFIGURATION);
+
+		if(moduleResponse.event  === FadSDK.Constants.EventModule.MODULE_CLOSED){
 			alert('Module closed by the user');
 			return;
 		}
-		// // PROCESS_COMPLETED
+		// PROCESS_COMPLETED
 		console.log('Process completed');
-		console.log(regulaResponse);
-		// // use the results as you see fit
-		// // show result example
+		console.log(moduleResponse);
+		// use the results as you see fit
+		// show result example
 
 		const containerResult = document.getElementById('container-result');
-		const imageIdFront = document.getElementById('image-id-front') as HTMLImageElement;
-		const imageIdBack = document.getElementById('image-id-back') as HTMLImageElement;
-		const imageFace = document.getElementById('image-face') as HTMLImageElement;
+		const imageIdFront = document.getElementById('image-id-front');
+		const imageIdBack = document.getElementById('image-id-back');
+		const imageFace = document.getElementById('image-face');
 		const ocr = document.getElementById('ocr');
 
 		containerResult.style.display = 'flex';
-		imageIdFront.src = regulaResponse.data.id.front;
+		imageIdFront.src = moduleResponse.data.id.front;
 
-		if (regulaResponse.data.id?.back) {
-			imageIdBack.src = regulaResponse.data.id.back;
+		if (moduleResponse.data.id?.back) {
+			imageIdBack.src = moduleResponse.data.id.back;
 		} else {
 			imageIdBack.style.display = 'none';
 		}
-		imageFace.src = regulaResponse.data.idPhoto;
-		ocr.innerHTML = JSON.stringify(regulaResponse.data.idData.ocr);
+		imageFace.src = moduleResponse.data.idPhoto;
+		ocr.innerHTML = JSON.stringify(moduleResponse.data.idData.ocr);
 	} catch (ex) {
 		// PRROCESS_ERROR
 		console.log(ex);

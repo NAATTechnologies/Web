@@ -1,6 +1,5 @@
-
- import FadSDK from '@fad-producto/fad-sdk';
-import {ACUANT_CREDENTIALS, CONFIGURATION, TOKEN} from './acuant-constants';
+ import FadSDK from '../web-sdk/fad-sdk.min.js';
+ import {CREDENTIALS, CONFIGURATION, TOKEN} from './capture-id&A-constants.js';
 
  
 
@@ -17,29 +16,29 @@ import {ACUANT_CREDENTIALS, CONFIGURATION, TOKEN} from './acuant-constants';
 	 const manualCapture = true;
  
 	 // Returns the image of identification (id.image.data) and relevant information (sharpness, glare), documentInstance, idData and idPhoto
-	 const acuantResponse = await FAD_SDK.startAcuant(ACUANT_CREDENTIALS, idData, idPhoto, manualCapture, CONFIGURATION);
+	 const moduleResponse = await FAD_SDK.startAcuant(CREDENTIALS, idData, idPhoto, manualCapture, CONFIGURATION);
  
 	 // PROCESS_COMPLETED
-	 console.log(acuantResponse);
+	 console.log(moduleResponse);
 	 // use the results as you see fit
 	 // show result example
  
 	 const containerResult = document.getElementById('container-result');
-	 const imageIdFront = document.getElementById('image-id-front') as HTMLImageElement;
-	 const imageIdBack = document.getElementById('image-id-back') as HTMLImageElement;
-	 const imageFace = document.getElementById('image-face') as HTMLImageElement;
+	 const imageIdFront = document.getElementById('image-id-front');
+	 const imageIdBack = document.getElementById('image-id-back');
+	 const imageFace = document.getElementById('image-face');
 	 const ocr = document.getElementById('ocr');
  
 	 containerResult.style.display = 'flex';
-	 imageIdFront.src = acuantResponse.data.id.front.image.data;
+	 imageIdFront.src = moduleResponse.data.id.front.image.data;
  
-	 if(acuantResponse.data.id?.back?.image?.data) {
-		 imageIdBack.src = acuantResponse.data.id.back.image.data;
+	 if(moduleResponse.data.id?.back?.image?.data) {
+		 imageIdBack.src = moduleResponse.data.id.back.image.data;
 	 } else {
 		 imageIdBack.style.display = 'none';
 	 }
-	 imageFace.src = acuantResponse.data.idPhoto;
-	 ocr.innerHTML = JSON.stringify(acuantResponse.data.idData.ocr);
+	 imageFace.src = moduleResponse.data.idPhoto;
+	 ocr.innerHTML = JSON.stringify(moduleResponse.data.idData.ocr);
 	} catch (ex) {
 	 // PRROCESS_ERROR
 	 console.log(ex);
