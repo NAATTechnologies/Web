@@ -25,10 +25,10 @@ import { CONFIGURATION, TOKEN } from "./capture-id-constants";
 	 const ocr = document.getElementById('ocr');
  
 	 containerResult.style.display = 'flex';
-	 imageIdFront.src = captureIdResponse.data.id.front.data;
+	 imageIdFront.src = captureIdResponse.data.image.front.data;
  
-	 if(captureIdResponse.data.id?.back?.data) {
-		 imageIdBack.src = captureIdResponse.data.id.back.data;
+	 if(captureIdResponse.data.image?.back?.data) {
+		 imageIdBack.src = captureIdResponse.data.image.back.data;
 	 } else {
 		 imageIdBack.style.display = 'none';
 	 }
