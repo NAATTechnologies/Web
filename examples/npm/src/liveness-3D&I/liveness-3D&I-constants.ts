@@ -5,6 +5,12 @@ export const TOKEN = "XXXXXXXXXXXXXX";
 
 // optional, the app has default legends and colors
 export const CONFIGURATION = {
+  livenesCheck: true,
+  asThreshold: "HIGH",
+  assisted: false,
+  timeout: 50000,
+  appUI: 0,
+  headerProcess: window.location.origin,
   customization: {
     fadCustomization: {
       colors: {
