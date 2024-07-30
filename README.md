@@ -69,7 +69,7 @@ El SDK incluye los siguientes módulos:
 ### [Liveness-3D](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Liveness‐3D)
 
 - Prueba de vida
-- Detección suplantanción de identidad (fotografías, videos y máscaras)
+- Detección suplantación de identidad (fotografías, videos y máscaras)
 
 ### [Firma](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Signature)
 - Pad de firma
@@ -91,6 +91,10 @@ El SDK incluye los siguientes módulos:
 ### [Capture-id](https://github.com/NAATTechnologies/Web/wiki/WebSDK-CaptureId)
 - Captura de documentos (INE, IFE, Pasaporte Mexicano)
 - Extraccion de OCR
+
+### [Liveness-3D&I](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Liveness‐3D&I)
+- Prueba de vida
+- Detección suplantación de identidad (fotografías, videos y máscaras)
 
 ## Instalación  
 
@@ -224,6 +228,9 @@ finally {
 
 #### Capture id
 [`FAD_SDK.startCaptureId(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-CaptureId#websdk-captureId)
+
+#### Liveness‐3D&I
+[`FAD_SDK.startIdentyFace(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Liveness‐3D&I)
 
 ### 5. Ejemplo de código completo
 
