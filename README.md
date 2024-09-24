@@ -256,5 +256,7 @@ try {
 
 Cada módulo aquí descrito, cuenta con su [ejemplo](https://github.com/NAATTechnologies/Web/tree/master/examples) para un entendimiento más práctico.
 
+Para probar los ejemplos npm es necesario hacer la instalación de las dependencias, usar el comando `npm run build` y usar un server para levantar la app como Live Server.
+
 > **Nota**: estos ejemplos son únicamente demostrativos, cada desarrollador debe determinar la mejor implementación y las mejores prácticas según sea el caso.
 

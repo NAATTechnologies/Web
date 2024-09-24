@@ -2,10 +2,38 @@ export const TOKEN = "TOKEN";
 
 // optional, the app has default legends and colors
 export const CONFIGURATION = {
+  views: {
+		instructions: false,
+		preview: false,
+	},
   customization: {
     fadCustomization: {
       colors: {
         primary: "#A70635",
+      },
+      buttons: {
+        primary: {
+          backgroundColor: "#A70635",
+          labelColor: "#ffffff",
+        },
+      },
+      fonts: {
+        title: {
+          fontSize: "25px",
+          fontFamily: "system-ui",
+        },
+        subtitle: {
+          fontSize: "17px",
+          fontFamily: "system-ui",
+        },
+        content: {
+          fontSize: "15px",
+          fontFamily: "system-ui",
+        },
+        button: {
+          fontSize: "17px",
+          fontFamily: "system-ui",
+        },
       },
     },
     moduleCustomization: {
