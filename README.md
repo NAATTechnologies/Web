@@ -89,7 +89,10 @@ El SDK incluye los siguientes módulos:
 - Leyenda en modo karaoke
 
 ### [Capture-id](https://github.com/NAATTechnologies/Web/wiki/WebSDK-CaptureId)
-- Captura de documentos (INE, IFE, Pasaporte Mexicano)
+- Captura de documentos:
+  - IFE tipo C
+  - INE tipo D, E, F, G, H, I
+  - Pasaporte mexicano
 - Extraccion de OCR
 
 ### [Liveness-3D&I](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Liveness‐3D&I)
