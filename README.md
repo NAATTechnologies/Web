@@ -8,9 +8,9 @@
 
 </div-->
 
-# FAD SDK Web iframe v1.0.0
+# FAD SDK v1.1.0
 
-**Agosto 2023**
+**Agosto 2024**
 
 <!-- Accede a [https://github.com/NAATTechnologies/Web/releases](https://github.com/NAATTechnologies/Web/releases) para ver las notas de la versión. -->
 
