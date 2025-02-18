@@ -238,6 +238,9 @@ finally {
 #### Liveness‐3D&I
 [`FAD_SDK.startIdentyFace(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Liveness‐3D&I)
 
+#### Fingerprints&I
+[`FAD_SDK.startIdentyFingerprints(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Fingerprints&I)
+
 ### 5. Ejemplo de código completo
 
 ```js
