@@ -98,6 +98,9 @@ El SDK incluye los siguientes módulos:
 ### [Liveness-3D&I](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Liveness‐3D&I)
 - Prueba de vida
 - Detección suplantación de identidad (fotografías, videos y máscaras)
+ 
+### [Fingerprints&I](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Fingerprints&I)
+- Captura de huellas
 
 ## Instalación  
 
