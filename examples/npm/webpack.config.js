@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-let modules = ['capture-id&A', 'liveness-3D', 'fadweb', 'capture-id&R', 'signature', 'videoagreement', 'videotaping', 'capture-id', 'liveness-3D&I'];
+let modules = ['capture-id&A', 'liveness-3D', 'fadweb', 'capture-id&R', 'signature', 'videoagreement', 'videotaping', 'capture-id', 'liveness-3D&I', 'fingerprints&I'];
 let multipleHtmlPlugins = modules.map(name => {
   return new HtmlWebpackPlugin({
     template: `./src/${name}/${name}-example.html`, // relative path to the HTML files
@@ -22,7 +22,8 @@ module.exports = {
     'videoagreement/videoagreement-example': ['./src/videoagreement/videoagreement-example.ts'],
     'videotaping/videotaping-example': ['./src/videotaping/videotaping-example.ts'],
     'capture-id/capture-id-example': ['./src/capture-id/capture-id-example.ts'],
-    'liveness-3D&I/liveness-3D&I-example': ['./src/liveness-3D&I/liveness-3D&I-example.ts']
+    'liveness-3D&I/liveness-3D&I-example': ['./src/liveness-3D&I/liveness-3D&I-example.ts'],
+    'fingerprints&I/fingerprints&I-example': ['./src/fingerprints&I/fingerprints&I-example.ts']
   },
   output: {
     filename: '[name].js',
