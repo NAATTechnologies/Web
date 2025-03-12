@@ -14,7 +14,7 @@ async function initProcess() {
 		const idPhoto = true; // true - get imaghen face of id, false - without this data
 
 		// Returns the image of identification (id.image.data) and relevant information (sharpness, glare), documentInstance, idData and idPhoto
-		const moduleResponse = await FAD_SDK.startRegula(CREDENTIALS, idData, idPhoto, FadSDK.Constants.Regula.CaptureType.CAMERA_SNAPSHOT, CONFIGURATION);
+		const moduleResponse = await FAD_SDK.startRegula(CREDENTIALS, FadSDK.Constants.Regula.CaptureType.DOCUMENT_READER, idData, idPhoto, CONFIGURATION);
 
 		if(moduleResponse.event  === FadSDK.Constants.EventModule.MODULE_CLOSED){
 			alert('Module closed by the user');
