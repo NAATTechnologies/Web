@@ -1,6 +1,5 @@
 import { TOKEN, CREDENTIALS, CONFIGURATION } from "./capture-id&R-constants";
 
-// const FadSDK = require('FadSDK');
 import FadSDK from "@fad-producto/fad-sdk";
 
 async function initProcess() {
@@ -12,8 +11,7 @@ async function initProcess() {
 	try {
 		const idData = true; // true - ocr, false - without this data
 		const idPhoto = true; // true - get imaghen face of id, false - without this data
-		console.log(TOKEN);
-		
+
 		// Returns the image of identification (id.image.data) and relevant information (sharpness, glare), documentInstance, idData and idPhoto
 		const regulaResponse = await FAD_SDK.startRegula(CREDENTIALS, FadSDK.Constants.Regula.CaptureType.CAMERA_SNAPSHOT, idData, idPhoto, CONFIGURATION);
 
@@ -21,11 +19,11 @@ async function initProcess() {
 			alert('Module closed by the user');
 			return;
 		}
-		// // PROCESS_COMPLETED
+		// PROCESS_COMPLETED
 		console.log('Process completed');
 		console.log(regulaResponse);
-		// // use the results as you see fit
-		// // show result example
+		// use the results as you see fit
+		// show result example
 
 		const containerResult = document.getElementById('container-result');
 		const imageIdFront = document.getElementById('image-id-front') as HTMLImageElement;
