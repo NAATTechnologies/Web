@@ -8,9 +8,9 @@
 
 </div-->
 
-# FAD SDK v2.0.0
+# FAD SDK v2.1.0
 
-**Febrero 2025**
+**Marzo 2025**
 
 <!-- Accede a [https://github.com/NAATTechnologies/Web/releases](https://github.com/NAATTechnologies/Web/releases) para ver las notas de la versión. -->
 
