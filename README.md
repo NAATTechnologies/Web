@@ -102,6 +102,12 @@ El SDK incluye los siguientes módulos:
 ### [Fingerprints&I](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Fingerprints&I)
 - Captura de huellas
 
+### [Fad Web 4](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Producto)
+- Firma de documentos
+
+### [Biometrics by steps](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Biometrics-by-steps)
+- Proceso de validación
+
 ## Instalación  
 
 ### Para npm instale la librería con el comando:
