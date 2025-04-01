@@ -15,7 +15,7 @@ body {
 }
 
 
-a { 
+a, button { 
 		padding: 10px;
     border-radius: 6px;
     border-width: 1px;
