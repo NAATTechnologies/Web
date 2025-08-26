@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-let modules = ['capture-id&A', 'liveness-3D', 'fadweb', 'capture-id&R', 'signature', 'videoagreement', 'videotaping', 'capture-id', 'liveness-3D&I', 'fingerprints&I', 'fad-biometrics-by-steps'];
+let modules = ['capture-id&A', 'liveness-3D', 'fadweb', 'capture-id&R', 'signature', 'videoagreement', 'videotaping', 'capture-id', 'liveness-3D&I', 'fingerprints&I', 'fad-biometrics-by-steps', 'liveness-3D&T'];
 let multipleHtmlPlugins = modules.map(name => {
   return new HtmlWebpackPlugin({
     template: `./src/${name}/${name}-example.html`, // relative path to the HTML files
@@ -24,7 +24,8 @@ module.exports = {
     'capture-id/capture-id-example': ['./src/capture-id/capture-id-example.ts'],
     'liveness-3D&I/liveness-3D&I-example': ['./src/liveness-3D&I/liveness-3D&I-example.ts'],
     'fingerprints&I/fingerprints&I-example': ['./src/fingerprints&I/fingerprints&I-example.ts'],
-    'fad-biometrics-by-steps/fad-biometrics-by-steps-example': ['./src/fad-biometrics-by-steps/fad-biometrics-by-steps-example.ts']
+    'fad-biometrics-by-steps/fad-biometrics-by-steps-example': ['./src/fad-biometrics-by-steps/fad-biometrics-by-steps-example.ts'],
+    'liveness-3D&T/liveness-3D&T-example': ['./src/liveness-3D&T/liveness-3D&T-example.ts']
   },
   output: {
     filename: '[name].js',
