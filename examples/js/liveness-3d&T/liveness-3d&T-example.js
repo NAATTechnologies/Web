@@ -8,7 +8,7 @@ async function initProcess() {
 
  const FAD_SDK = new FadSDK(TOKEN, options);
  try {
-  const moduleResponse = await FAD_SDK.startTocLiveness(CREDENTIALS, CONFIGURATION);
+	const moduleResponse = await FAD_SDK.startLivenessToc(CREDENTIALS, CONFIGURATION);
 
   // PROCESS_COMPLETED
   console.log('Process completed');
@@ -29,12 +29,12 @@ async function initProcess() {
  } catch (ex) {
   // PROCESS_ERROR
   console.log(ex);
-  if (ex.code === FadSDK.Errors.TocLiveness.SERVICE_ERROR) {
+  if (ex.code === FadSDK.Errors.LivenessToc.SERVICE_ERROR) {
    // do something
    alert('Ocurrió un error en el servicio');
-  } else if (ex.code === FadSDK.Errors.TocLiveness.TIMEOUT_EXCEEDED) {
+  } else if (ex.code === FadSDK.Errors.LivenessToc.TIMEOUT_EXCEEDED) {
    // restart component
-  } else if (ex.code === FadSDK.Errors.TocLiveness.FACE_BLURRY) {
+  } else if (ex.code === FadSDK.Errors.LivenessToc.FACE_BLURRY) {
     //restart component
   } else {
    // restart component
