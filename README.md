@@ -251,7 +251,7 @@ finally {
 [`FAD_SDK.startIdentyFingerprints(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Fingerprints&I)
 
 #### Liveness-3D&T
-[`FAD_SDK.startTocLiveness(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Liveness-3D&T)
+[`FAD_SDK.startLivenessToc(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Liveness‐3D&T)
 
 ### 5. Ejemplo de código completo
 
