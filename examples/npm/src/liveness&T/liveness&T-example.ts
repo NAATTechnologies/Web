@@ -14,18 +14,23 @@ async function initProcess() {
   // PROCESS_COMPLETED
   console.log('Process completed');
   console.log(moduleResponse);
-  // use the results as you see fit
-  // show result example
-    
-  const img = moduleResponse.data.faceScan;
 
-  // use the results as you see fit
-  // show result example
-  const containerResult = document.getElementById('container-result');
-  const imageId = document.getElementById('image-id') as HTMLImageElement;
-
-  containerResult.style.display = 'flex';
-  imageId.src = img;
+  if (moduleResponse.event == FadSDK.Constants.EventModule.MODULE_CLOSED) {
+    alert('Module closed by user');
+  } else {
+    // use the results as you see fit
+    // show result example
+      
+    const img = moduleResponse.data.faceScan;
+  
+    // use the results as you see fit
+    // show result example
+    const containerResult = document.getElementById('container-result');
+    const imageId = document.getElementById('image-id') as HTMLImageElement;
+  
+    containerResult.style.display = 'flex';
+    imageId.src = img;
+  }
 
  } catch (ex) {
   // PROCESS_ERROR
