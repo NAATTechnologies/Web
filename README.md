@@ -102,7 +102,7 @@ El SDK incluye los siguientes módulos:
 ### [Fingerprints&I](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Fingerprints&I)
 - Captura de huellas
 
-### [Liveness-3D&T](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Liveness‐3D&T)
+### [Liveness&T](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Liveness&T)
 - Prueba de vida
 
 ### [Fad Web 4](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Producto)
@@ -250,8 +250,8 @@ finally {
 #### Fingerprints&I
 [`FAD_SDK.startIdentyFingerprints(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Fingerprints&I)
 
-#### Liveness-3D&T
-[`FAD_SDK.startLivenessToc(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Liveness‐3D&T)
+#### Liveness&T
+[`FAD_SDK.startLivenessToc(....)`](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Liveness&T)
 
 ### 5. Ejemplo de código completo
 
