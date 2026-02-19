@@ -2,7 +2,7 @@ import FadSDK from '../web-sdk/fad-sdk.min.js';
 
 async function initProcess() {
 	const options = {
-		environment: FadSDK.getFadEnvironments().UAT
+		environment: FadSDK.getFadEnvironments().UATHA
 	};
 
 	console.log(`V${FadSDK.version}`)

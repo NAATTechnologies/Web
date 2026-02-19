@@ -5,7 +5,7 @@
  
  async function initProcess() {
 	const options = {
-	 environment: FadSDK.getFadEnvironments().UAT,
+	 environment: FadSDK.getFadEnvironments().UATHA,
 	};
  
 	const FAD_SDK = new FadSDK(TOKEN, options);

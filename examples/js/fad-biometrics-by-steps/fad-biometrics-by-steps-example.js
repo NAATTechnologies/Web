@@ -1,6 +1,6 @@
 import FadSDK from '../web-sdk/fad-sdk.min.js';
 
-const options = { environment: FadSDK.getFadEnvironments().UAT };
+const options = { environment: FadSDK.getFadEnvironments().UATHA };
 const FAD_SDK = new FadSDK(null, options);
 
 async function initProcess() {

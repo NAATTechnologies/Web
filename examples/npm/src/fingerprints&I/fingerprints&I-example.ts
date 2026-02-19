@@ -3,7 +3,7 @@ import { CREDENTIALS, CONFIGURATION, TOKEN } from './fingerprints&I-constants';
 
 async function initProcess() {
  const options = {
-  environment: FadSDK.getFadEnvironments().UAT,
+  environment: FadSDK.getFadEnvironments().UATHA,
  };
 
  const detectionModes = ['L4F', 'R4F'];
