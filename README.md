@@ -10,7 +10,7 @@
 
 # FAD SDK v3.0.0
 
-**Marzo 2025**
+**Febrero 2026**
 
 <!-- Accede a [https://github.com/NAATTechnologies/Web/releases](https://github.com/NAATTechnologies/Web/releases) para ver las notas de la versión. -->
 
