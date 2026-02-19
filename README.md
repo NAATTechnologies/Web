@@ -8,7 +8,7 @@
 
 </div-->
 
-# FAD SDK v2.1.0
+# FAD SDK v3.0.0
 
 **Marzo 2025**
 
