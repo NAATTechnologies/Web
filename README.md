@@ -8,9 +8,9 @@
 
 </div-->
 
-# FAD SDK v3.0.0
+# FAD SDK v3.1.0
 
-**Febrero 2026**
+**Marzo 2026**
 
 <!-- Accede a [https://github.com/NAATTechnologies/Web/releases](https://github.com/NAATTechnologies/Web/releases) para ver las notas de la versión. -->
 
@@ -110,6 +110,9 @@ El SDK incluye los siguientes módulos:
 
 ### [Biometrics by steps](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Biometrics-by-steps)
 - Proceso de validación
+
+### [Fad Web Click](https://github.com/NAATTechnologies/Web/wiki/WebSDK-Fad-web-click)
+- Firma rápida de documentos
 
 ## Instalación  
 
